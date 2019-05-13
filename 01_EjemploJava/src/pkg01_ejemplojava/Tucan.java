@@ -1,26 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pkg01_ejemplojava;
 
 /**
- *
- * @author Admin
+ * Un pajaro exótico
+ * @author German
  */
-public class Tucan {
-    String[] colores;
-    int edad;
-    float longitud;
+public class Tucan extends Object {
     
-    public Tucan(){
+    String[] colores;
+    float longitud;
+    int edad;
+    
+    public Tucan() {
         this.edad = 0;
-        this.longitud = 5f;
-        String colores[] = {"blanco", "marron"};
+        longitud = 5f;
+        colores = new String[] {
+            "blanco", "marron"
+        };
+        
     }
     
-    public void piar(){
-        System.out.println("pio pio " + edad+ " años");
+/** 
+ * Un pajaro dice pío y su edad
+ * @author German
+ */
+    public void piar() {
+        System.out.println("Pio pio "
+                + edad + " años");
     }
 }
